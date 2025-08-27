@@ -1,0 +1,17 @@
+<odoo>
+<!--Add the certificat field to the base.view_partner_form in a new notebook page.-->
+    <record id="res_users_view_form" model="ir.ui.view">
+        <field name="name">res.partner.view.form.inherit.estate</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Certificate">
+                        <group>
+                                <field name="certificat"/>
+                        </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
