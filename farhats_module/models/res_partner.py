@@ -6,4 +6,4 @@ class Partner(models.Model):
 
     certificat = fields.Boolean(string="Certificat ISO9001")
 
-    
+    is_committee = fields.Boolean(string="Is a committee")

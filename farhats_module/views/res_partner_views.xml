@@ -8,6 +8,9 @@
             <xpath expr="//field[@name='vat']" position="after">
                 <field name="certificat"/>
             </xpath>
+            <xpath expr="//field[@name='certificat']" position="after">
+                <field name="is_committee"/>
+            </xpath>
         </field>
     </record>
     <!--Add the certificat field to the base.view_partner_tree after the email field.-->
