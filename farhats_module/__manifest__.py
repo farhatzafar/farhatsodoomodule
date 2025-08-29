@@ -3,5 +3,6 @@
     'description': "A module for practice",
     'version': '18.0.0.1',
     'application': True,
-    'data': ['views/res_partner_views.xml', 'views/product_template_views.xml']
+    'depends': ['base', 'product', 'sale'],
+    'data': ['views/res_partner_views.xml', 'views/product_template_views.xml', 'views/work_order_views.xml']
 }
